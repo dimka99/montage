@@ -9,12 +9,65 @@
             "properties": {
                 "element": {"#": "owner"}
             }
+        },
+        "button": {
+            "prototype": "digit/ui/button.reel",
+            "properties": {
+                "element": {"#": "button"},
+                "enabled": true,
+                "label": "Sign in"
+            }
+        },
+        "checkbox": {
+            "prototype": "digit/ui/checkbox.reel",
+            "properties": {
+                "element": {"#": "checkbox"},
+                "checked": false,
+                "contenteditable": "true",
+                "dir": "ltr",
+                "draggable": "true",
+                "enabled": true
+            }
+        },
+        "textField": {
+            "prototype": "digit/ui/text-field.reel",
+            "properties": {
+                "element": {"#": "textField"},
+                "contenteditable": "true",
+                "dir": "ltr",
+                "draggable": "true",
+                "enabled": true,
+                "placeholderValue": "Username"
+            }
+        },
+        "textField2": {
+            "prototype": "digit/ui/text-field.reel",
+            "properties": {
+                "element": {"#": "textField2"},
+                "enabled": true,
+                "placeholderValue": "Password"
+            }
+        },
+        "title": {
+            "prototype": "digit/ui/title.reel",
+            "properties": {
+                "element": {"#": "title"},
+                "contenteditable": "true",
+                "dir": "ltr",
+                "draggable": "true",
+                "value": "Login Form"
+            }
         }
     }
     </script>
 </head>
 <body>
     <div data-montage-id="owner" class="Signin">
+        <h1 data-montage-id="title"></h1>
+        <input data-montage-id="textField" type="text">
+        <input data-montage-id="textField2" type="text">
+        <input type="checkbox" data-montage-id="checkbox">
+        <button data-montage-id="button"></button>
     </div>
 </body>
 </html>
