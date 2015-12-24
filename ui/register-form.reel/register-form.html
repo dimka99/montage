@@ -9,12 +9,54 @@
             "properties": {
                 "element": {"#": "owner"}
             }
+        },
+        "textField": {
+            "prototype": "digit/ui/text-field.reel",
+            "properties": {
+                "element": {"#": "textField"},
+                "placeholderValue": "First Name"
+            }
+        },
+        "textField2": {
+            "prototype": "digit/ui/text-field.reel",
+            "properties": {
+                "element": {"#": "textField2"},
+                "placeholderValue": "Last Name"
+            }
+        },
+        "textField3": {
+            "prototype": "digit/ui/text-field.reel",
+            "properties": {
+                "element": {"#": "textField3"},
+                "placeholderValue": "Email"
+            }
+        },
+        "textField4": {
+            "prototype": "digit/ui/text-field.reel",
+            "properties": {
+                "element": {"#": "textField4"},
+                "placeholderValue": "Organisation"
+            }
+        },
+        "title": {
+            "prototype": "digit/ui/title.reel",
+            "properties": {
+                "element": {"#": "title"},
+                "value": "Register Form"
+            }
         }
     }
     </script>
 </head>
 <body>
     <div data-montage-id="owner" class="RegisterForm">
+        <h1 data-montage-id="title">
+
+        </h1>
+        <input data-montage-id="textField" type="text">
+        <input data-montage-id="textField2" type="text">
+        <input data-montage-id="textField3" type="text">
+        <input data-montage-id="textField4" type="text">
     </div>
 </body>
 </html>
